@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+body{
+    background-color: black;
+    margin: 0; 
+    background-repeat: no-repeat;
+    background-image: url("img/logo2.png");
+    background-position-x: 50%;
+    background-position-y: 150px;
+}
+
+header{
+    background: #000000;
+}
+
+nav{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin: -5px 0 0 0;
+}
+nav ul{
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+    width: 800px;
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 2px 2px 2px #000000
+}
+nav a:hover{
+    color: #b8232f;
+    border-bottom: solid 1px #ffffff;
+}
+
+#description{
+    justify-content: right;
+    height: 100px;
+    width: 500px;
+    display: block;
+    left: 10%;
+    position: absolute;
+    top: 10%;
+}
+
+#description p{
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5em;
+}
+
+#whitebox{
+    height: 680px;
+    width: 700px;
+    justify-content: center;
+    left: 64%;
+    position: absolute;
+}
+
+#whitebox img{
+    border: 1px solid #b8232f;
+}
+#whitebox p, h1, i{
+    color: #b8232f;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#alexpic{
+    margin: 5px 50px 0 10px;
+}
+
+#namealex{
+    position: absolute;
+    left: 12%;
+    top: 35%;
+}
+
+#alexquote{
+    position: absolute;
+    display: block;
+    width: 298px;
+    left: 4%;
+    font-size: 1.2em;
+    top: 48%;
+}
+
+#alexinfo{
+    position: absolute;
+    top: 60%;
+    display: block;
+    width: 298px;
+    left: 3%;
+    font-size: 1.4em;
+}
+#box1{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    top: 45.1%;
+    left: 1.5%;
+    z-index: -1;
+    border: 1px solid #b8232f
+}
+#namepaw{
+    position: absolute;
+    top:35%;
+    left: 70%;
+}
+
+#pawquote{
+    position: absolute;
+    left: 53%;
+    top: 47%;
+    width: 298px;
+    font-size: 1.1em;
+}
+
+#pawinfo{
+    position: absolute;
+    display: block;
+    left: 55%;
+    top: 60%;
+    font-size: 1.4em;
+    width: 298px;
+}
+
+#box2{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    top: 45.1%;
+    left: 52.35%;
+    border: 1px solid #b8232f;
+    z-index: -1;
+}
+@media screen and (max-width: 1800px){
+    
+    #whitebox{
+        left: 63%;
+    }}
+@media screen and (max-width: 1400px){
+    #whitebox{
+        left: 55%;
+    }}

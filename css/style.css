@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+body{
+    background-color: #000000;  
+    margin: 0; 
+    background-image: url("img/logo2.png");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 150px; 
+}
+
+header{
+    background: #000000;
+}
+
+nav{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin: -5px 0 0 0;
+}
+nav ul{
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+    width: 800px;
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 2px 2px 2px #000000
+}
+nav a:hover{
+    color: #b8232f;
+    border-bottom: solid 1px #ffffff;
+}
+
+#websites{
+    color: #b8232f;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
+    animation: type 4s steps(60, end); 
+    white-space: nowrap;
+    font-size: 4em;
+    margin: 700px 0 0 560px;
+    width: 20em;
+}
+
+span{
+    animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+    from { width: 0; } 
+} 
+
+@keyframes type2{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100; } 
+} 
+
+@keyframes blink{
+    to{opacity: .0;}
+}
+
+@media screen and (max-width: 1800px){
+    #websites{
+    margin: 700px 0 0 450px;}
+}
+
+@media screen and (max-width: 1200px){
+    #websites{
+        margin: 700px 0 0 200px;
+    }
+}
